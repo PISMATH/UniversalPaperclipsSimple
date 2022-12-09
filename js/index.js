@@ -81,6 +81,7 @@ function HandleWirePress(){
     if (Funds >= WireCost){
         Funds -= WireCost;
         Wire += 1000;
+        WireCost += 100;
     }
     UpdateUserView();
 }
