@@ -1,0 +1,43 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Universal paperclips</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+    <div id="PaperclipSection">
+        <p id="PaperclipsTxt">Paperclips: 0</p>
+        <button type="button" id="MakePaperclipButton" class="ActiveButton" onclick="HandleMakePaperclipPress()">Make Paperclip</button>
+    </div>
+    <br>
+    <span>Business</span>
+    <hr>
+    <div id="Business">
+        <p id="FundsTxt">Available Funds: $ 0.00</p>
+        <p id="InventoryTxt">Unsold Inventory: 0</p>
+
+        <button type="button" id="LowerButton" class="ActiveButton" onclick="HandleLowerPricePress()">Lower</button>
+        <button type="button" id="RaiseButton" class="ActiveButton" onclick="HandleRaisePricePress()">Raise</button>
+        <span id="PriceTxt">Price: $ 0.25</span>
+        <p></p>
+
+        <button type="button" id="MarketingButton" class="ActiveButton" onclick="HandleMarketingPress()">Marketing</button>
+        <span id="MarketingLvlTxt">Level: 1</span>
+        <p id="MarketingCostTxt">Cost: $ 100.00</p>
+    </div>
+    <span>Manufacturing</span>
+    <hr>
+    <div id="Manufacturing">
+        <button type="button" id="WireButton" class="ActiveButton" onclick="HandleWirePress()">Wire</button>
+        <span id="WireTxt">1,000 inches</span>
+        <p id="WireCostTxt">Cost: $ 10</p>
+
+        <button type="button" id="AutoCliperButton" class="ActiveButton" onclick="HandleAutoCliperPress()">AutoCliper</button>
+        <span id="AutoCliperNumTxt">0</span>
+        <p id="AutoCliperCostTxt">Cost: $ 5.00</p>
+    </div>
+    <script src="js/index.js"></script>
+    </body>
+</html>

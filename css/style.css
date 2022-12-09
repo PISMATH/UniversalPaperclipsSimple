@@ -1,0 +1,36 @@
+hr {
+    width   :   10%;
+    margin  :   0px;
+    padding : 0 25%;
+}
+
+#PaperclipsTxt {
+    font-size   : 1.5em;
+    font-weight :  bold;
+}
+.ActiveButton {
+    border        :                              1px solid #1a1a1a;
+    border-radius :                                            2px;
+    padding       :                                        2px 4px;
+    background    : -webkit-linear-gradient(top, #ffffff, #888888);
+}
+.PassiveButton {
+    border        :                              1px solid #1a1a1a;
+    border-radius :                                            2px;
+    padding       :                                        2px 4px;
+    background    : -webkit-linear-gradient(top, #ffffff, #aaaaaa);
+    color         :                                        #999999;
+}
+.ActiveButtonPressed {
+    border        :                                 1px solid #1a1a1a;
+    border-radius :                                               2px;
+    padding       :                                           2px 4px;
+    background    : -webkit-linear-gradient(bottom, #ffffff, #888888);
+}
+.PassiveButtonPressed {
+    border        :                                 1px solid #1a1a1a;
+    border-radius :                                               2px;
+    padding       :                                           2px 4px;
+    background    : -webkit-linear-gradient(bottom, #ffffff, #aaaaaa);
+    color         :                                           #999999;
+}
