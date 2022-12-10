@@ -35,7 +35,7 @@ function UpdateUserView(){
 
     if (Funds >= AutoClipersPrice) {document.getElementById('AutoCliperButton').classList.remove('PassiveButton');}
     else {document.getElementById('AutoCliperButton').classList.add('PassiveButton');}
-
+    SaveGame();
 }
 function GetMarketingUpgradeCost(){
     return Math.pow(2, Marketing - 1) + '00.00';
@@ -111,13 +111,9 @@ function HandleAutoCliperPress(){
     UpdateAutoCliperTime();
 }
 function SaveGame(){
-    document.cookie =   "Paperclips="        + Paperclips
-                      + ";Funds="            + Funds
-                      + ";Inventory="        + Inventory
-                      + ";Price="            + Price
-                      + ";Marketing="        + Marketing
-                      + ";Wire="             + Wire
-                      + ";WireCost="         + WireCost
-                      + ";AutoClipers="      + AutoClipers
-                      + ";AutoClipersPrice=" + AutoClipersPrice
+    document.cookie = [Paperclips, Funds, Inventory, Price, Marketing, Wire, WireCost, AutoClipers, AutoClipersPrice]
+}
+
+function LoadGame(){
+
 }
